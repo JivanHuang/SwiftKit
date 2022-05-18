@@ -43,6 +43,10 @@
 		8CD8EB6C2833949F00AD5EF7 /* Base64StringCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD8EB4A2833949F00AD5EF7 /* Base64StringCoder.swift */; };
 		8CD8EB6D2833949F00AD5EF7 /* StringCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD8EB4B2833949F00AD5EF7 /* StringCoder.swift */; };
 		8CD8EB722833A15400AD5EF7 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD8EB712833A15400AD5EF7 /* EmailValidator.swift */; };
+		8CF144D22834B810006A65B8 /* Double+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF144D12834B810006A65B8 /* Double+Transform.swift */; };
+		8CF144D52834B95C006A65B8 /* Int+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF144D42834B95C006A65B8 /* Int+Transform.swift */; };
+		8CF144D82834BB99006A65B8 /* UIControl+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF144D72834BB99006A65B8 /* UIControl+Chain.swift */; };
+		8CF144DB2834BE7D006A65B8 /* Float+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF144DA2834BE7D006A65B8 /* Float+Transform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,10 @@
 		8CD8EB4A2833949F00AD5EF7 /* Base64StringCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64StringCoder.swift; sourceTree = "<group>"; };
 		8CD8EB4B2833949F00AD5EF7 /* StringCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCoder.swift; sourceTree = "<group>"; };
 		8CD8EB712833A15400AD5EF7 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		8CF144D12834B810006A65B8 /* Double+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Transform.swift"; sourceTree = "<group>"; };
+		8CF144D42834B95C006A65B8 /* Int+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Transform.swift"; sourceTree = "<group>"; };
+		8CF144D72834BB99006A65B8 /* UIControl+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Chain.swift"; sourceTree = "<group>"; };
+		8CF144DA2834BE7D006A65B8 /* Float+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Transform.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,10 +159,10 @@
 		8CD8EB0D2833949E00AD5EF7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8CD8EB492833949F00AD5EF7 /* StringCoder */,
+				8CD8EB472833949F00AD5EF7 /* ReusableFormatters */,
 				8CD8EB0E2833949E00AD5EF7 /* Validator */,
 				8CD8EB142833949E00AD5EF7 /* Extension */,
-				8CD8EB472833949F00AD5EF7 /* ReusableFormatters */,
-				8CD8EB492833949F00AD5EF7 /* StringCoder */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 		8CD8EB182833949E00AD5EF7 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				8CF144D62834BB82006A65B8 /* UIControl */,
 				8CD8EB192833949E00AD5EF7 /* UIImage */,
 				8CD8EB1C2833949E00AD5EF7 /* UIScreen */,
 				8CD8EB1E2833949E00AD5EF7 /* UILabel */,
@@ -302,6 +311,9 @@
 		8CD8EB312833949E00AD5EF7 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				8CF144D92834BE62006A65B8 /* Float */,
+				8CF144D32834B950006A65B8 /* Int */,
+				8CF144D02834B7F7006A65B8 /* Double */,
 				8CD8EB322833949E00AD5EF7 /* UserDefaults */,
 				8CD8EB342833949E00AD5EF7 /* Collection */,
 				8CD8EB362833949F00AD5EF7 /* Array */,
@@ -411,6 +423,38 @@
 				8CD8EB4B2833949F00AD5EF7 /* StringCoder.swift */,
 			);
 			path = StringCoder;
+			sourceTree = "<group>";
+		};
+		8CF144D02834B7F7006A65B8 /* Double */ = {
+			isa = PBXGroup;
+			children = (
+				8CF144D12834B810006A65B8 /* Double+Transform.swift */,
+			);
+			path = Double;
+			sourceTree = "<group>";
+		};
+		8CF144D32834B950006A65B8 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				8CF144D42834B95C006A65B8 /* Int+Transform.swift */,
+			);
+			path = Int;
+			sourceTree = "<group>";
+		};
+		8CF144D62834BB82006A65B8 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				8CF144D72834BB99006A65B8 /* UIControl+Chain.swift */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		8CF144D92834BE62006A65B8 /* Float */ = {
+			isa = PBXGroup;
+			children = (
+				8CF144DA2834BE7D006A65B8 /* Float+Transform.swift */,
+			);
+			path = Float;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,7 +578,9 @@
 				8CD8EB4D2833949F00AD5EF7 /* PhoneNumberValidator.swift in Sources */,
 				8CD8EB532833949F00AD5EF7 /* UIImage+Color.swift in Sources */,
 				8CD8EB502833949F00AD5EF7 /* IPAddressValidator.swift in Sources */,
+				8CF144DB2834BE7D006A65B8 /* Float+Transform.swift in Sources */,
 				8CD8EB6B2833949F00AD5EF7 /* ReusableFormatters.swift in Sources */,
+				8CF144D22834B810006A65B8 /* Double+Transform.swift in Sources */,
 				8CD8EB4F2833949F00AD5EF7 /* IDCardValidator.swift in Sources */,
 				8CD8EB6C2833949F00AD5EF7 /* Base64StringCoder.swift in Sources */,
 				8CD8EB6D2833949F00AD5EF7 /* StringCoder.swift in Sources */,
@@ -548,6 +594,8 @@
 				8CD8EB522833949F00AD5EF7 /* UIImage+Transform.swift in Sources */,
 				8CD8EB592833949F00AD5EF7 /* UIColor+Transform.swift in Sources */,
 				8CD8EB602833949F00AD5EF7 /* UserDefaults+Codable.swift in Sources */,
+				8CF144D82834BB99006A65B8 /* UIControl+Chain.swift in Sources */,
+				8CF144D52834B95C006A65B8 /* Int+Transform.swift in Sources */,
 				8CD8EB662833949F00AD5EF7 /* URL+Query.swift in Sources */,
 				8CD8EB512833949F00AD5EF7 /* CGRect+Transform.swift in Sources */,
 				8CD8EB642833949F00AD5EF7 /* Date+Format.swift in Sources */,

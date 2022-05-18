@@ -22,7 +22,7 @@ public extension URL {
         queryParameters.first { $0.isNamed(name) }
     }
 
-    func setQueryParameter(name: String, value: String, urlEncode: Bool = true) -> URL? {
+    func setQueryParameter(name: String, value: String, urlEncode: Bool = false) -> URL? {
         guard let urlString = absoluteString.components(separatedBy: "?").first else { return self }
         let param = queryParameter(named: name)
         let name = param?.name ?? name
