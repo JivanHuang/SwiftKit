@@ -47,6 +47,7 @@
 		8CF144D52834B95C006A65B8 /* Int+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF144D42834B95C006A65B8 /* Int+Transform.swift */; };
 		8CF144D82834BB99006A65B8 /* UIControl+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF144D72834BB99006A65B8 /* UIControl+Chain.swift */; };
 		8CF144DB2834BE7D006A65B8 /* Float+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF144DA2834BE7D006A65B8 /* Float+Transform.swift */; };
+		8CF144DE2834C0E3006A65B8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF144DD2834C0E3006A65B8 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		8CF144D42834B95C006A65B8 /* Int+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Transform.swift"; sourceTree = "<group>"; };
 		8CF144D72834BB99006A65B8 /* UIControl+Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Chain.swift"; sourceTree = "<group>"; };
 		8CF144DA2834BE7D006A65B8 /* Float+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Transform.swift"; sourceTree = "<group>"; };
+		8CF144DD2834C0E3006A65B8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		8CD8EB0D2833949E00AD5EF7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8CF144DC2834C0D7006A65B8 /* Theme */,
 				8CD8EB492833949F00AD5EF7 /* StringCoder */,
 				8CD8EB472833949F00AD5EF7 /* ReusableFormatters */,
 				8CD8EB0E2833949E00AD5EF7 /* Validator */,
@@ -457,6 +460,14 @@
 			path = Float;
 			sourceTree = "<group>";
 		};
+		8CF144DC2834C0D7006A65B8 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				8CF144DD2834C0E3006A65B8 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -595,6 +606,7 @@
 				8CD8EB592833949F00AD5EF7 /* UIColor+Transform.swift in Sources */,
 				8CD8EB602833949F00AD5EF7 /* UserDefaults+Codable.swift in Sources */,
 				8CF144D82834BB99006A65B8 /* UIControl+Chain.swift in Sources */,
+				8CF144DE2834C0E3006A65B8 /* Theme.swift in Sources */,
 				8CF144D52834B95C006A65B8 /* Int+Transform.swift in Sources */,
 				8CD8EB662833949F00AD5EF7 /* URL+Query.swift in Sources */,
 				8CD8EB512833949F00AD5EF7 /* CGRect+Transform.swift in Sources */,
